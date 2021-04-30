@@ -1,0 +1,108 @@
+@charset "UTF-8";
+/*!
+* Adminara v1.0.0 (http://darana.id/templates/adminara)
+* Copyright 2021 DaranaSV
+*/
+* {
+	outline: none;
+}
+html,
+body {
+    height: 100%;
+}
+.container,
+.container-fluid,
+.container-sm,
+.container-md,
+.container-lg,
+.container-xl {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+#wrapper {
+    display: flex;
+}
+#wrapper .sidebar-menu {
+    flex-basis: 225px;
+    flex-shrink: 0;
+    transition: transform 0.15s ease-in-out;
+    z-index: 1038;
+    transform: translateX(-225px);
+}
+#wrapper .sidebar-menu.dark {
+  background-color: #000;
+}
+#wrapper .main-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 0;
+    flex-grow: 1;
+    min-height: calc(100vh - 56px);
+    margin-left: -225px;
+}
+
+.is-fixed #wrapper .sidebar-menu,
+.is-fixed .ara-topnav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+.is-toggled #wrapper .sidebar-menu {
+    transform: translateX(0);
+}
+.is-toggled #wrapper .main-content:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    z-index: 1037;
+    opacity: 0.5;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.is-fixed .ara-topnav {
+    z-index: 1039;
+}
+.is-fixed #wrapper .sidebar-menu {
+    width: 225px;
+    height: 100vh;
+    z-index: 1038;
+}
+.is-fixed #wrapper .sidebar-menu .ara-sidenav {
+    padding-top: 56px;
+}
+.is-fixed #wrapper .sidebar-menu .ara-sidenav .ara-sidenav-menu {
+    overflow-y: auto;
+}
+.is-fixed #wrapper .main-content {
+    padding-left: 225px;
+    top: 56px;
+}
+
+/* top nav */
+.ara-topnav {
+    padding-left: 0;
+    height: 56px;
+    z-index: 1039;
+}
+.ara-topnav .navbar-brand {
+    width: 225px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: 0;
+}
+.ara-topnav.navbar-dark #wrapperToggle {
+    color: rgba(255, 255, 255, 0.5);
+}
+.ara-topnav.navbar-light #wrapperToggle {
+    color: #212529;
+}
