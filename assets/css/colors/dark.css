@@ -1,3 +1,6 @@
 #wrapper .sidebar-menu {
     background-color: #212529;
 }
+.ara-sidenav .nav-item > .dropdown-menu {
+    background-color: #191c1f;
+}
