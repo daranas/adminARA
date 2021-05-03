@@ -1,0 +1,21 @@
+{
+  "name": "adminara",
+  "version": "1.0.0",
+  "description": "Adminara is a fully responsive admin dashboard template. Based on Bootstrap 4.6 framework and also the JS/jQuery plugin.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daranas/Adminara.git"
+  },
+  "author": "darana.id",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/daranas/Adminara/issues"
+  },
+  "homepage": "https://github.com/daranas/Adminara#readme",
+  "dependencies": {
+    "bootstrap": "^4.6.0",
+    "bootstrap-icons": "^1.4.1",
+    "jquery": "^3.5.1",
+    "metismenu": "^3.0.6"
+  }
+}

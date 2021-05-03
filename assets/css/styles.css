@@ -3,3 +3,116 @@
 * Adminara v1.0.0 (http://darana.id/templates/adminara)
 * Copyright 2021 DaranaSV
 */
+body {
+    min-height: 100vh;
+    width: 100%;
+    background: #f5f5f8;
+    font-family: "Helvetica Neue", helvetica, sans-serif;
+}
+/* header */
+.ara-header .navbar {
+    height: 70px;
+    padding: 0 1rem 0 0;
+    background: #fff;
+}
+.ara-header .navbar-brand {
+    width: 250px;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 20px;
+    transition: all .3s;
+}
+.ara-header.collapsed .navbar-brand {
+    margin-left: -250px;
+}
+.ara-header .sidebar-toggler {
+    height: 70px;
+    width: 70px;
+    line-height: 70px;
+    cursor: pointer;
+    text-align: center;
+}
+.ara-header .sidebar-toggler i {
+    font-size: 26px;
+}
+
+/* sidebar */
+.ara-sidebar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    z-index: 1011;
+    width: 250px;
+    color: #777;
+    padding-top: 70px;
+    background: #1d2127;
+    margin-left: 0;
+    transition: all .3s;
+}
+.ara-sidebar.collapsed {
+    margin-left: -250px;
+}
+.ara-sidebar nav {
+    background: #212529;
+}
+.ara-sidebar nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.ara-sidebar nav .metismenu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+.ara-sidebar nav .metismenu > li {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 0%;
+    flex: 1 1 0%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    position: relative;
+}
+.ara-sidebar nav .metismenu a {
+    position: relative;
+    display: block;
+    font-size: 14px;
+    padding: 13px 15px;
+    color: #adb5bd;
+    outline-width: 0;
+    transition: all 0.3s ease-out;
+}
+.ara-sidebar nav .metismenu ul a {
+    padding: 10px 15px 10px 30px;
+}
+.ara-sidebar nav .metismenu ul ul a {
+    padding: 10px 15px 10px 45px;
+}
+.ara-sidebar nav .metismenu a:hover,
+.ara-sidebar nav .metismenu a:focus,
+.ara-sidebar nav .metismenu a:active,
+.ara-sidebar nav .metismenu .mm-active > a {
+    color: #f8f9fa;
+    text-decoration: none;
+    background: #0b7285;
+}
+
+.ara-main {
+    width: 100%;
+    padding: 100px 20px 0;
+    margin-left: 250px;
+    transition: all .3s;
+}
+.ara-main.collapsed {
+    margin-left: 0px;
+}
